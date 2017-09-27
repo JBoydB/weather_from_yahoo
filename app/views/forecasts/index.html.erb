@@ -1,0 +1,9 @@
+<h1>Tucson, AZ Forecast </h1>
+
+<% @weather.each do |forecast| %>
+  <h2><%= forecast['day'] %> - <%= forecast['date'] %></h2>
+  <h3>High: <%= forecast['high'] %></h3>
+  <h3>Low: <%= forecast['low'] %></h3>
+  <h3> Forecast: <%= forecast['text'] %> </h3>
+  <br>
+<%end%>
